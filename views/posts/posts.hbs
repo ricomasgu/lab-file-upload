@@ -1,0 +1,13 @@
+<div>
+    <h3>Latest posts: </h3>
+    {{#each posts}}
+    {{#with this}}
+        <article>
+            <a href="/posts/{{_id}}"><img src="{{picPath}}" alt="{{picName}}"></a>
+        </article>
+    {{/with}}
+    {{/each}}
+    {{#if user}}
+        <a href="/create">Create a post</a>
+    {{/if}}
+</div>

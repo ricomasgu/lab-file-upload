@@ -9,7 +9,7 @@ const postSchema = new Schema(
     },
     creatorId: {
       type: Schema.Types.ObjectId,
-      ref: 'Project',
+      ref: 'User',
       required: [true, "Creator is required."],
     },
     picPath: {
